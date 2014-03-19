@@ -34,20 +34,18 @@ h1 {
 }
 
 form{
-  margin-top: 30%;
+  margin-top: 10%;
 }
 
 div#spin{
    visibility: none;
 }
 
-input.ui-slider-input, .ui-field-contain input.ui-slider-input{
-   display: none;
-}
 
 div.ui-slider{
    margin: 0;
    width: 100%;
+   background-color: blue;
 }
 
 p#whereCandy {
@@ -58,6 +56,30 @@ p#whereCandy {
 p#whoCandy {
    color: white;
    font-size: 1.2em;
+   text-align: center;
+}
+
+img#flossImg {
+   width: 35%;
+   margin-left: 35%;
+   z-index: 1;
+}
+
+img#propellerImg {
+   width: 5%;
+}
+
+div#name {
+   margin-left: 15%;
+}
+
+img#ledImg {
+   width: 5%;
+}
+
+p#instuction {
+   margin-left: 5%;
+   color: white;
    text-align: center;
 }
 

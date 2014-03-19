@@ -2297,7 +2297,7 @@ ol.ui-listview .ui-li-jsnumbering:before { content: "" !important; } /* to avoid
 }
 label.ui-slider { font-size: 16px; line-height: 1.4; font-weight: normal; margin: 0 0 .3em; display: block; }
 input.ui-slider-input,
-.ui-field-contain input.ui-slider-input { display: inline-block; width: 50px; background-image: none; padding: .4em; margin: .5em 0; line-height: 1.4; font-size: 16px; outline: 0; }
+.ui-field-contain input.ui-slider-input { display: none; width: 50px; background-image: none; padding: .4em; margin: .5em 0; line-height: 1.4; font-size: 16px; outline: 0; }
 input.ui-slider-input.ui-mini,
 .ui-field-contain input.ui-slider-input.ui-mini { width: 45px; margin: .25em 0; font-size: 14px; }
 .ui-field-contain input.ui-slider-input { margin: 0; }

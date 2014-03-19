@@ -11,15 +11,21 @@
 			//values are of range
 			values = {} ;
 
+			//buttons
 		var bIsOn;
 
+		//Spacebrew function
 		function setupSpacebrew (){
+			//if button is on
 			bIsOn = true;
+
 			console.log(bIsOn);
 
+			//we already named our app
 			app_name = app_name;
 			//creating an instance of the spacebrew client object and assigning this to sb object
 			console.log("Setting up spacebrew connection");
+			//look at all the objects being reused
 			sb = new Spacebrew.Client({reconnect:true});
 			//it takes the parameters, name, description
 			sb.name(app_name);
@@ -43,6 +49,11 @@
 			// listen to the mouse 
 			$("#buttonMsg").on("mousedown", onButtonPress);
 			$("#buttonMsg").on("mouseup", onButtonRelease);
+			$("#slider1").css("visibility", "hidden");
+			$("#slider1").css("display", "none");
+			
+			$("#slider2").css("visibility", "hidden");
+			$("#slider2").css("display", "none");
 		};
 
 		//Function that is called when Spacebrew connection is established
@@ -66,6 +77,7 @@
 			});
 		}
 
+		//function for the range msg. 
 		function onRangeMessage(name, value){
 			console.log("Received new range message ", value);
 			$("#"+name).slider('refresh', value);
@@ -86,7 +98,6 @@
 			} else {
 				sb.send("buttonPress", "boolean", "true");
 			}
-
 		}
 
 
@@ -103,9 +114,5 @@
 			} else {
 				// buttonMsg.innerHTML = 'off';
 				div.style.background = "#FF4CA2"
-
 			}
-
-
-
 		}
